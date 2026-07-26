@@ -1,51 +1,48 @@
-# Page Pulse
+# PulseAudit
 
-Page Pulse is a web auditing tool that analyzes a webpage URL and generates a report containing technical and content-related insights.
+PulseAudit is a web-based website auditing tool that analyzes any webpage URL and generates a technical and SEO snapshot.
 
-The application fetches a webpage, parses its HTML content, and provides details such as response status, response time, page title, meta description, heading structure, missing image alt attributes, and approximate word count.
+The application fetches a webpage, processes its HTML content, and provides useful insights such as HTTP status, response time, page title, meta description, heading structure, missing image alt attributes, approximate word count, and an overall website health summary.
+
+The goal of PulseAudit is to provide a simple way to understand the basic technical health and structure of a webpage.
+
+---
 
 ## Features
 
 - URL validation
-- Website response analysis
+- Website availability checking
 - HTTP status detection
 - Response time measurement
 - Page title extraction
 - Meta description extraction
-- H1 tag counting
-- Missing image alt text detection
+- H1 heading count analysis
+- Missing image alt attribute detection
 - Approximate word count calculation
-- Error handling for invalid URLs, timeouts, and non-HTML pages
+- Overall website health summary
+- Error handling for invalid URLs, timeouts, and unsupported responses
 
+---
 
 ## Tech Stack
 
+### Backend
 - Python
 - Flask
-- BeautifulSoup
 - Requests
-- HTML/CSS/JavaScript
+- BeautifulSoup
+
+### Frontend
+- HTML
+- CSS
+- JavaScript
+
+### Testing
 - Pytest
 
+### Deployment
+- Render
+
+---
 
 ## Project Structure
-PagePulse/
-│
-├── app.py
-├── parser.py
-├── tests/
-│ └── test_parser.py
-├── templates/
-│ └── index.html
-├── static/
-│ ├── style.css
-│ └── script.js
-└── requirements.txt
-
-
-## Installation
-
-Clone the repository:
-
-```bash
-git clone <repository-url>
